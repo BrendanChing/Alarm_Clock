@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}Timer{% endblock %}
+
+{% block content %}
+  <!-- Timer Display Placeholder -->
+  <div class="text-center mb-4">
+    <!-- This heading will later be updated to show the timer count or status -->
+    <h1 id="timer-display">00:00:00</h1>
+  </div>
+
+  <!-- Scheduled Timers List -->
+  <div class="list-group">
+    <!-- Example of a Scheduled Timer -->
+    <div class="list-group-item d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center">
+        <!-- Optional icon for timers -->
+        <i class="bi bi-clock-history text-primary"></i>
+        <span class="ms-2">Workout Timer</span>
+      </div>
+      <div class="d-flex align-items-center">
+        <!-- Placeholder for 'time until start' for a scheduled timer -->
+        <span class="badge bg-secondary rounded-pill me-2">starts in 15m</span>
+        <!-- Delete Button -->
+        <button class="btn btn-danger btn-sm">Delete</button>
+      </div>
+    </div>
+
+    <!-- You can add more timer items dynamically here -->
+  </div>
+
+  <!-- New Timer Button -->
+  <div class="text-center mt-3">
+    <button class="btn btn-success">New Timer</button>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <!-- You can add your JavaScript here later to update the timer display and manage timers -->
+{% endblock %}

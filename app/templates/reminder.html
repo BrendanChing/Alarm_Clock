@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %}Reminders{% endblock %}
+
+{% block content %}
+  <!-- Digital Clock Placeholder -->
+  <div class="text-center mb-4">
+    <h1 id="digital-clock">00:00:00</h1>
+  </div>
+
+  <!-- Saved Reminders List -->
+  <div class="list-group">
+    <!-- Example of an Active Reminder -->
+    <div class="list-group-item d-flex justify-content-between align-items-center">
+      <div class="d-flex flex-column">
+        <!-- Reminder Title -->
+        <strong>Doctor Appointment</strong>
+        <!-- Scheduled Time & Date -->
+        <small class="text-muted">Scheduled for: 2025-02-10 09:00 AM</small>
+      </div>
+      <div class="d-flex align-items-center">
+        <!-- Active Reminder Icon -->
+        <i class="bi bi-check-circle-fill text-success me-2"></i>
+        <!-- Delete Button -->
+        <button class="btn btn-danger btn-sm">Delete</button>
+      </div>
+    </div>
+
+    <!-- Example of an Inactive Reminder -->
+    <div class="list-group-item d-flex justify-content-between align-items-center">
+      <div class="d-flex flex-column">
+        <!-- Reminder Title -->
+        <strong>Meeting with Team</strong>
+        <!-- Scheduled Time & Date -->
+        <small class="text-muted">Scheduled for: 2025-02-12 02:00 PM</small>
+      </div>
+      <div class="d-flex align-items-center">
+        <!-- Inactive Reminder Icon -->
+        <i class="bi bi-x-circle-fill text-muted me-2"></i>
+        <!-- Delete Button -->
+        <button class="btn btn-danger btn-sm">Delete</button>
+      </div>
+    </div>
+
+    <!-- Additional reminders will be dynamically added here -->
+  </div>
+
+  <!-- New Reminder Button -->
+  <div class="text-center mt-3">
+    <button class="btn btn-success">New Reminder</button>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <!-- Place your JavaScript here to update the clock and handle reminders -->
+{% endblock %}

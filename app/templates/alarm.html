@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %}Alarm{% endblock %}
+
+{% block content %}
+  <!-- Digital Clock Placeholder -->
+  <div class="text-center mb-4">
+    <h1 id="digital-clock">00:00:00</h1>
+  </div>
+
+  <!-- Saved Alarms List -->
+  <div class="list-group">
+    <!-- Example of an Active Alarm -->
+    <div class="list-group-item d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center">
+        <!-- Green tick icon for active alarm -->
+        <i class="bi bi-check-circle-fill text-success"></i>
+        <span class="ms-2">Morning Alarm</span>
+      </div>
+      <div class="d-flex align-items-center">
+        <!-- Placeholder for countdown until the alarm goes off -->
+        <span class="badge bg-secondary rounded-pill me-2">in 2h 30m</span>
+        <!-- Delete Button -->
+        <button class="btn btn-danger btn-sm">Delete</button>
+      </div>
+    </div>
+
+    <!-- Example of an Inactive Alarm -->
+    <div class="list-group-item d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center">
+        <!-- Grey cross icon for inactive alarm -->
+        <i class="bi bi-x-circle-fill text-muted"></i>
+        <span class="ms-2">Evening Alarm</span>
+      </div>
+      <div class="d-flex align-items-center">
+        <!-- Placeholder indicating the alarm is inactive -->
+        <span class="badge bg-secondary rounded-pill me-2">inactive</span>
+        <!-- Delete Button -->
+        <button class="btn btn-danger btn-sm">Delete</button>
+      </div>
+    </div>
+
+    <!-- Additional alarms will be added here dynamically -->
+  </div>
+
+  <!-- New Alarm Button -->
+  <div class="text-center mt-3">
+    <button class="btn btn-success">New Alarm</button>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <!-- Add your JavaScript later to update the digital clock and manage alarms -->
+{% endblock %}
